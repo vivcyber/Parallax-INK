@@ -1,0 +1,62 @@
+/*!
+ * Bootstrap v5.1.3 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+@import "material-color";
+
+@import "functions";
+
+$primary: $ffc400;
+$secondary: $grey-600;
+$success: $cyan-a400;
+$info: $blue-500;
+$warning: $yellow-500;
+$danger: $red-500;
+$light: $grey-100;
+$dark: $grey-800;
+
+$link-hover-decoration: none;
+$border-radius: 0;
+
+@import "variables";
+@import "mixins";
+@import "utilities";
+
+@import "root";
+@import "reboot";
+// @import "type";
+// @import "images";
+// @import "containers";
+// @import "grid";
+// @import "tables";
+// @import "forms";
+@import "buttons";
+// @import "transitions";
+// @import "dropdown";
+// @import "button-group";
+// @import "nav";
+// @import "navbar";
+// @import "card";
+// @import "accordion";
+// @import "breadcrumb";
+// @import "pagination";
+// @import "badge";
+// @import "alert";
+// @import "progress";
+// @import "list-group";
+// @import "close";
+// @import "toasts";
+// @import "modal";
+// @import "tooltip";
+// @import "popover";
+// @import "caroimportl";
+// @import "spinners";
+// @import "offcanvas";
+// @import "placeholders";
+
+// @import "helpers";
+
+// @import "utilities/api";

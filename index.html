@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<style>
+body{
+  background-image: url(./imgs/paint_bg.jpg);
+}
+    
+.parallax {
+  perspective: 100px;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+  top: 0vh;
+  left: 0%;
+  right: 0;
+  bottom: 0;
+  /* margin-left: -1000px; */
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer img {
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+
+.parallax__cover {
+  /* background: #000; */
+  display: block;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  right: 0;
+  height: 8000px;
+  z-index: -2;
+}
+
+.parallax__layer__0 {
+  transform: translateZ(-500px) scale(4) translateX(-500px) translateY(500px);
+  /* background: radial-gradient(#ff5722 7%, #2196f3 50%, #000 70%); */
+}
+
+.parallax__layer__1 {
+  transform: translateZ(-400px) scale(5) translateX(-100px) translateY(0px);
+}
+
+.parallax__layer__2 {
+    transform: translateZ(-350px) scale(2) translateX(00px);
+}
+.parallax__layer__ink {
+    
+    transform: translateZ(-100px) scale(1) translateX(-500px) translateY(3000px);
+}
+
+.parallax__layer__3 {
+    transform: translateZ(-350px) scale(3) translateX(0px);
+}
+.parallax__layer__4 {
+  transform: translateZ(-300px) scale(2) translateX(00px) translateY(400px);
+}
+.parallax__layer__5 {
+  transform: translateZ(-250px) scale(1.5) translateX(-500px) translateY(400px);
+}
+.parallax__layer__6 {
+    transform: translateZ(-200px) scale(3) translateX(200px) translateY(600px)
+}
+.parallax__layer__7 {
+  transform: translateZ(0px) scale(.6) translateX(-500px) translateY(4000px) ;
+}
+.parallax__layer__8 {
+  transform: translateZ(-50px) scale(1) translateX(00px) translateY(2000px)
+}
+.parallax__layer__9 {
+  transform: translateZ(0px) scale(1)translateY(100px) ;
+}
+
+.parallax__layer__11 {
+    transform: translateZ(-150px) scale(2) translateX(00px) translateY(2000px)
+}
+.parallax__layer__12 {
+  transform: translateZ(0px) scale(1) translateX(00px) translateY(2500px)
+}
+
+
+.maincard{
+  width: 70%;
+}
+.pic{
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  
+}
+
+.pic>img{
+   object-fit: cover;
+}
+.pic2{
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  left: 500px;
+  top: 500px;
+}
+.sitebtn{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #D4FF79;
+  border: 1px solid transparent;
+  color: black;
+  margin: 0 auto;
+}
+
+.sitebtn :hover{
+  border-radius: 50%;
+  background-color:white;
+  border: 1px solid black;
+  color: black;
+
+}
+.sitebtn h4{
+  line-height: 120px;
+}
+
+
+
+
+.terza-sezione{margin-top:-0vh}
+.bg-green{
+  background-color: #D4FF79;
+  padding: 24px;
+  color: black;
+}
+
+</style>
+</head>
+<body>
+   
+
+      <div class="container">
+        <div class="article p-5 text-center border border-dark m-5 bg-white">
+          <h1 class="pb-5 border-bottom border-dark">this is title A</h1>
+          <p class="my-5 ">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure illo, nulla laudantium, cum quo quas, eius mollitia sit non magnam doloremque! Debitis sed quaerat dicta vel eligendi, tempora quis sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure illo, nulla laudantium, cum quo quas, eius mollitia sit non magnam doloremque! Debitis sed quaerat dicta vel eligendi, tempora quis sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure illo, nulla laudantium, cum quo quas, eius mollitia sit non magnam doloremque! Debitis sed quaerat dicta vel eligendi, tempora quis sint.eius mollitia sit non magnam doloremque! Debitis sed quaerat dicta vel eligendi, tempora quis sint.
+      
+          </p>
+          <!-- <div class="card-bottom w-100 text-center">
+                <div class="sitebtn">
+                  <h4 class="fw-light">View Site</h4>
+                </div>
+              </div> -->
+              
+          
+        </div>
+      </div>
+    <div class="container-fluid">
+          
+        <div class="parallax">
+            <div class="parallax__layer parallax__layer__0">
+              <img src="./imgs/bg.png" />
+            </div>
+            <div class="parallax__layer parallax__layer__1">
+              <img src="./imgs/ink08.png" />
+            </div>
+            <div class="parallax__layer parallax__layer__2">
+              <img src="./imgs/ink07.png" />
+            </div>
+            <div class="parallax__layer parallax__layer__ink">
+              <img src="./imgs/ink_a.png" />
+            </div>
+            <div class="parallax__layer parallax__layer__4">
+              <img src="./imgs/grunge.png" />
+            </div>
+            <div class="parallax__layer parallax__layer__5">
+              <div class="div bg-black">    
+              <img src="./imgs/girl.png" />
+            </div>
+            
+          </div>
+
+          <div class="parallax__layer parallax__layer__6">
+            <div class="card bg-info text-black maincard p-3">
+              <h3 class="text-white p-3 mb-1">This is Title C</h3>
+                <p class="text-white p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, sit quos nisi doloremque aperiam molestias quas soluta in quo earum consectetur animi? Dolorum ea recusandae libero debitis a suscipit ab.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, sit quos nisi doloremque aperiam molestias quas soluta in quo earum consectetur animi? Dolorum ea recusandae libero debitis a suscipit ab.
+                <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, sit quos nisi doloremque aperiam molestias quas soluta in quo earum consectetur animi? Dolorum ea recusandae libero debitis a suscipit ab.
+                </p>
+            </div>
+          </div>
+
+          <div class="parallax__layer parallax__layer__7">
+            <img src="./imgs/graf_front.png" />
+          </div>
+
+          <div class="parallax__layer parallax__layer__8">
+            <img src="./imgs/pexels-şeyda-nur-yüce-11250899.jpg" class="img-thumbnail pic" alt="...">
+            <img src="./imgs/pexels-julio-motta-3284572.jpg" class="img-thumbnail pic2" alt="...">
+            
+                
+          </div>
+          <div class="parallax__layer parallax__layer__11">
+            <div class="bg-green ">
+              <h3 class="text-black mb-5 ">This is Title B</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, sit quos nisi doloremque aperiam molestias quas soluta in quo earum consectetur animi? Dolorum ea recusandae libero debitis a suscipit ab.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, sit quos nisi doloremque aperiam molestias quas soluta in quo earum consectetur animi? Dolorum ea recusandae libero debitis a suscipit ab.
+               
+                </p>
+            </div>
+
+            <div class="parallax__layer parallax__layer__12">
+              
+              <div class="card-bottom text-center">
+                <div class="sitebtn">
+                  <h4 class="fw-light">View Site</h4>
+                </div>
+              </div>
+              
+            </div>
+          <div class="parallax__cover"></div>
+          
+       
+        
+    </div>
+
+   
+    <section class='terza-sezione'>
+        <p class="text-white">Fantastico, hai ragggiunto la terza sezione</p>
+        <button class="btn btn-dark">go</button>
+      </section>
+   
+</body>
+</html>
